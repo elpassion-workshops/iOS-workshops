@@ -20,4 +20,9 @@ class PokemonViewController: UIViewController {
         fatalError("Not implemented")
     }
     
+    override func loadView() {
+        view = UIView(frame: CGRect.zero)
+        view.backgroundColor = UIColor.whiteColor()
+    }
+    
 }
