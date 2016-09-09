@@ -20,4 +20,13 @@ class PokemonViewController: UIViewController {
         fatalError("Not implemented")
     }
     
+    func imageForPokemon() -> UIImage? {
+        if let decodedData = NSData(base64EncodedString: pokemon.image, options: NSDataBase64DecodingOptions.IgnoreUnknownCharacters) {
+            
+            let decodedimage = UIImage(data: decodedData)
+            return decodedimage
+        }
+        return nil
+    }
+    
 }
