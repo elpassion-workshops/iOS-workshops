@@ -12,6 +12,7 @@
 		541B7DF21D82C74F00CB3631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 541B7DF11D82C74F00CB3631 /* Assets.xcassets */; };
 		541B7DF51D82C74F00CB3631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541B7DF31D82C74F00CB3631 /* LaunchScreen.storyboard */; };
 		541B7E051D83310700CB3631 /* Pokedex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541B7E041D83310700CB3631 /* Pokedex.swift */; };
+		541B7E091D83442400CB3631 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541B7E081D83442400CB3631 /* PokemonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		541B7DF41D82C74F00CB3631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		541B7DF61D82C74F00CB3631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		541B7E041D83310700CB3631 /* Pokedex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokedex.swift; sourceTree = "<group>"; };
+		541B7E081D83442400CB3631 /* PokemonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				541B7DF31D82C74F00CB3631 /* LaunchScreen.storyboard */,
 				541B7DF61D82C74F00CB3631 /* Info.plist */,
 				541B7E041D83310700CB3631 /* Pokedex.swift */,
+				541B7E081D83442400CB3631 /* PokemonViewController.swift */,
 			);
 			path = Workshops;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			files = (
 				541B7DED1D82C74F00CB3631 /* PokemonsListViewController.swift in Sources */,
 				541B7DEB1D82C74F00CB3631 /* AppDelegate.swift in Sources */,
+				541B7E091D83442400CB3631 /* PokemonViewController.swift in Sources */,
 				541B7E051D83310700CB3631 /* Pokedex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

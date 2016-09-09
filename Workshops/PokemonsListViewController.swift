@@ -34,6 +34,15 @@ extension PokemonsListViewController {
     }
 }
 
+extension PokemonsListViewController {
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let pokemonViewController = PokemonViewController()
+        navigationController?.pushViewController(pokemonViewController, animated: true)
+    }
+    
+}
+
 struct Pokemon {
     
     let name: String
