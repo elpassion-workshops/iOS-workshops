@@ -32,6 +32,10 @@ class PokemonViewController: UIViewController {
         
         let detailsLabel = UILabel(frame: CGRect(x: 10, y: 360, width: 300, height: 30))
         view.addSubview(detailsLabel)
+        
+        imageView.image = pokemon.image.toUIImage()
+        nameLabel.text = pokemon.name
+        detailsLabel.text = "Attack: \(pokemon.attack) Defence: \(pokemon.defense) Weight: \(pokemon.weight)"
     }
     
 }
