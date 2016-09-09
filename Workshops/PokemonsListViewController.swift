@@ -13,6 +13,7 @@ class PokemonsListViewController: UITableViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Pokemons"
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cellIdentifier")
     }
     
