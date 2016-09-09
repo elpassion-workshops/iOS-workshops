@@ -20,3 +20,12 @@ class PokemonsListViewController: UITableViewController {
 
 }
 
+struct Pokemon {
+    
+    let name: String
+    let attack: NSInteger
+    let defense: NSInteger
+    let weight: NSInteger
+    let image: String
+    
+}
