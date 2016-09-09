@@ -7,8 +7,13 @@ import UIKit
 
 class PokemonViewController: UIViewController {
     
-    init() {
+    let pokemon: Pokemon
+    
+    init(pokemon: Pokemon) {
+        self.pokemon = pokemon
         super.init(nibName: nil, bundle: nil)
+        
+        title = pokemon.name
     }
     
     required init?(coder aDecoder: NSCoder) {
