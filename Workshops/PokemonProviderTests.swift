@@ -12,28 +12,28 @@ import XCTest
 class PokemonProviderTests: XCTestCase {
 
     var sut: PokemonProvider!
-    
+
     override func setUp() {
         super.setUp()
-        
+
         sut = PokemonProvider()
     }
-    
+
     override func tearDown() {
         super.tearDown()
-        
+
         sut = nil
     }
-    
+
     func testList() {
         let pokemonList = sut.list()
-        XCTAssert(pokemonList.count > 0)
+        XCTAssert(pokemonList.isEmpty)
     }
-    
+
     func testPokemonWithName() {
         let pokemon = sut.pokemonWithName("Weedle")
         XCTAssertNotNil(pokemon)
         XCTAssert(pokemon?.attack == 35)
     }
-    
+
 }

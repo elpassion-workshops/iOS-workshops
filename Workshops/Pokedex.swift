@@ -7,23 +7,23 @@ import Foundation
 import UIKit
 
 struct Pokemon {
-    
+
     let name: String
     let attack: NSInteger
     let defense: NSInteger
     let weight: NSInteger
     let image: Base64Image
-    
+
 }
 
 struct Base64Image {
-    
+
     let string: String
-    
+
 }
 
 extension Base64Image {
-    
+
     func toUIImage() -> UIImage? {
         if let decodedData = NSData(base64EncodedString: string, options: NSDataBase64DecodingOptions.IgnoreUnknownCharacters) {
             let decodedimage = UIImage(data: decodedData)
@@ -31,5 +31,5 @@ extension Base64Image {
         }
         return nil
     }
-    
+
 }

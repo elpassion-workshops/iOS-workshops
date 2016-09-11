@@ -1,0 +1,23 @@
+opt_in_rules:
+  - variable_name
+  - force_cast
+  - todo
+  - empty_count
+  - missing_docs
+  - force_unwrapping
+excluded:
+  - Pods
+  - PokemonProvider.swift
+
+line_length: 200
+type_body_length:
+  - 300 # warning
+  - 400 # error
+file_length:
+  warning: 500
+  error: 1200
+type_name:
+  min_length: 3 # only warning
+  max_length: # warning and error
+    warning: 40
+    error: 50

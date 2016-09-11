@@ -13,29 +13,29 @@ import Nimble
 @testable import Workshops
 
 class PokemonProviderSpec: QuickSpec {
-    
+
     override func spec() {
         var sut: PokemonProvider!
-        
-        beforeEach { 
+
+        beforeEach {
             sut = PokemonProvider()
         }
-        
-        afterEach { 
+
+        afterEach {
             sut = nil
         }
-        
-        describe("list") { 
+
+        describe("list") {
             var pokemonList: [Pokemon]!
-            
-            beforeEach({ 
+
+            beforeEach({
                 pokemonList = sut.list()
             })
-            
+
             it("should have 21 pokemons") {
                 expect(pokemonList.count) == 21
             }
         }
     }
-    
+
 }

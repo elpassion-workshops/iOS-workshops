@@ -159,9 +159,9 @@
 				541B7DE31D82C74F00CB3631 /* Sources */,
 				541B7DE41D82C74F00CB3631 /* Frameworks */,
 				541B7DE51D82C74F00CB3631 /* Resources */,
-				4E0CDFD81D854D8000DA39BE /* Swiftlint */,
 				B2CECE9A992B22179AA3148E /* [CP] Embed Pods Frameworks */,
 				65F80377059212DC31BC8E30 /* [CP] Copy Pods Resources */,
+				4E461E031D8597E3006D7D5B /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -281,7 +281,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorkshopsTests/Pods-WorkshopsTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4E0CDFD81D854D8000DA39BE /* Swiftlint */ = {
+		4E461E031D8597E3006D7D5B /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -293,7 +293,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "";
+			shellScript = "if which swiftlint >/dev/null; then\ncd Workshops/; swiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		65F80377059212DC31BC8E30 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
