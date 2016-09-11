@@ -30,6 +30,7 @@ extension PokemonsListViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellIdentifier", forIndexPath: indexPath)
         let pokemon = Pokemons[indexPath.row]
         cell.textLabel?.text = pokemon.name
+        cell.imageView?.image = pokemon.image.toUIImage()
         return cell
     }
 }
