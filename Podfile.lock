@@ -1,15 +1,21 @@
 PODS:
   - MBProgressHUD (1.0.0)
+  - Nimble (4.1.0)
+  - Quick (0.9.3)
   - SnapKit (0.22.0)
 
 DEPENDENCIES:
   - MBProgressHUD (~> 1.0)
+  - Nimble (~> 4.1.0)
+  - Quick (~> 0.9.3)
   - SnapKit (~> 0.22)
 
 SPEC CHECKSUMS:
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  Nimble: 97a0a4cae5124c117115634b2d055d8c97d0af19
+  Quick: 13a2a2b19a5d8e3ed4fd0c36ee46597fd77ebf71
   SnapKit: 0dd2fd157330f1ea11fd84da13e6be8a7a22bae0
 
-PODFILE CHECKSUM: 49fb0c835294d659f30beb3c2109938f17807e37
+PODFILE CHECKSUM: e96f6714182390a9ee0f10cf27aad6753da9d7dc
 
 COCOAPODS: 1.0.1
